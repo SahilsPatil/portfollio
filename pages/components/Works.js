@@ -55,6 +55,22 @@ export default function Works(works) {
                     </div>
                 </div>
             </div>
+            <div className={styles.works_work}>
+                <div className={styles.works_work_image}>
+                    <Image className={styles.works_work_img} src={image1} />
+                </div>
+                <div className={styles.works_work_info}>
+                    <div className={styles.works_work_info_title} style={{ color: works.themeColor }}>
+                        Website
+                    </div>
+                    <div className={styles.works_work_info_desc}>
+                        Lorem ipsum dolor sit e! Ipsam assumenda ratione nulla voluptatum. Labore, cum, repellendus autem doloribus suscipit architecto aspernatur libero ex sequi magnam reiciendis.
+                    </div>
+                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <div className={"works_work_info_btn"} style={{ border: "1.5px solid " + works.themeColor }}>View Project</div>
+                    </div>
+                </div>
+            </div>
 
             <style jsx>
                 {`

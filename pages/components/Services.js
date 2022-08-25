@@ -8,17 +8,17 @@ export default function Services(services) {
     return (
         <div className={`${styles.services}`}>
             <div className={"services_service"}>
-                <div className={"services_service_image"}><Image src={coding} width={120} height={120} /></div>
+                <div className={"services_service_image"}><Image className={"services_service_image_img"} src={coding} /></div>
                 <div className={styles.services_service_title}>Web Developer</div>
                 <div className={styles.services_service_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque totam enim ipsam et .</div>
             </div>
             <div className={"services_service"}>
-                <div className={"services_service_image"}><Image src={coding} width={120} height={120} /></div>
+                <div className={"services_service_image"}><Image className={"services_service_image_img"} src={coding} /></div>
                 <div className={styles.services_service_title}>Web Developer</div>
                 <div className={styles.services_service_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque totam enim ipsam et .</div>
             </div>
             <div className={"services_service"}>
-                <div className={"services_service_image"}><Image src={coding} width={120} height={120} /></div>
+                <div className={"services_service_image"}><Image className={"services_service_image_img"} src={coding} /></div>
                 <div className={styles.services_service_title}>Web Developer</div>
                 <div className={styles.services_service_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque totam enim ipsam et .</div>
             </div>
@@ -26,7 +26,9 @@ export default function Services(services) {
                 {`
                 .services_service{
                     height: 400px;
-                    width: 28%;
+                    width:30%;
+                    min-width:250px;
+                    max-width:600px;
                     margin: 1.5%;
                     padding: 10px;
                     background-color: #191919;
@@ -39,6 +41,10 @@ export default function Services(services) {
                     animation: opacity 1.4s ease;
                     font-family: poppins;
                     color: whitesmoke;
+                    display: flex;
+                    flex-direction:column;
+                    justify-content: center;
+                    align-items: center;
                 }
 
                 .services_service:hover .services_service_image {
@@ -46,7 +52,9 @@ export default function Services(services) {
                 }
 
                 .services_service_image{
-                    display: inline-block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     /* position: relative; */
                     margin: 20px;
                     border-radius: 30%;
@@ -55,11 +63,25 @@ export default function Services(services) {
                     background: ${services.themeColor};
                     box-shadow: 0px 0px 0px 0px ${services.themeColor};
                     transition: all .8s ease;
-                    width: 120px;
-                    height: 120px;
+                    min-width:100px;
+                    min-height:100px;
+                    width:8vw;
+                    height:8vw;
                     z-index: 0;
                     pointer-events: none;
                 }
+                @media (max-width: 1000px){
+                    .services_service{
+                        width:40%;
+                    }
+                }
+                @media (max-width: 560px){
+                    .services_service{
+                        width:90%;
+                        min-width:200px;
+                    }
+                }
+                
                 `}
             </style>
         </div>

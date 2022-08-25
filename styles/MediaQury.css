@@ -1,0 +1,6 @@
+
+@media (min-width: 500px){
+    .cursor{
+        background-color: yellow !important;
+    }
+}

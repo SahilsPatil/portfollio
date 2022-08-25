@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
 import logo from './../../images/logo.png'
@@ -6,6 +6,7 @@ import logo from './../../images/logo.png'
 
 
 export default function Header(header) {
+    const [headerStyle, setheaderStyle] = useState({})
     const [header_navbar_menu_style, setHeader_navbar_menu_style] = useState(
         {
             header_navbar_menu: {
@@ -69,8 +70,18 @@ export default function Header(header) {
             }
         })
     }
+    // useEffect(() => {
+    //  window.addEventListener('scroll',()=>{
+    //     if(scrollY > "150"){
+    //         setheaderStyle({backdropFilter: "blur(50px)"})
+    //      }else{
+    //         setheaderStyle({})
+    //      }
+    //  })
+    // }, [])
+    
     return (
-        <div className={styles.header}>
+        <div className={styles.header} style={headerStyle}>
             <div className={styles.header_navbar}>
                 <div className={styles.header_navbar_logo}>
                     S{/* <Image className={styles.header_navbar_logo_img} src={logo} width={80} height={80} /> */}
