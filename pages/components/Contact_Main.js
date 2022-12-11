@@ -15,7 +15,7 @@ export default function Contact_Main(contact) {
                 <div className={styles.contact_message_title}>
                     Message Me
                 </div>
-                <form className={styles.contact_message_form} method="POST" data-netlify="true">
+                <form className={styles.contact_message_form} name="contact" method="POST" data-netlify="true">
                         <input type="hidden" name="form-name" value="contact"/>
                         <input type={"text"} placeholder='Name'/>
                         <input type={"email"} placeholder='Email'/>
