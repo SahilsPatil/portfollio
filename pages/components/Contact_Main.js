@@ -17,11 +17,11 @@ export default function Contact_Main(contact) {
                 </div>
                 <form className={styles.contact_message_form} name="contact" method="POST" data-netlify="true">
                         <input type="hidden" name="form-name" value="contact"/>
-                        <input type={"text"} placeholder='Name'/>
-                        <input type={"email"} placeholder='Email'/>
-                        <input type={"text"} placeholder='Suject'/>
-                        <textarea placeholder='Message' rows={4}/>
-                        <input style={{background:contact.themeColor}} type="submit" value={"Submit"} />
+                        <input name="name" type={"text"} placeholder='Name'/>
+                        <input name="email" type={"email"} placeholder='Email'/>
+                        <input name="subject" type={"text"} placeholder='Suject'/>
+                        <textarea name="message" placeholder='Message' rows={4}/>
+                        <input style={{background:contact.themeColor}} name="submit" type="submit" value={"Submit"} />
                 </form>
             </div>
             <div className={styles.contact_info}>
