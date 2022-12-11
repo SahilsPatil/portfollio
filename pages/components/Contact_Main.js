@@ -15,7 +15,7 @@ export default function Contact_Main(contact) {
                 <div className={styles.contact_message_title}>
                     Message Me
                 </div>
-                <form className={styles.contact_message_form} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <form action="https://my-portfolio-in-nextjs.netlify.app/contact" className={styles.contact_message_form} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                         <input type="hidden" name="form-name" value="contact"/>
                         <input name="name" type={"text"} placeholder='Name'/>
                         <input name="email" type={"email"} placeholder='Email'/>
