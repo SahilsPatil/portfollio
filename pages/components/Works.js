@@ -239,7 +239,7 @@ export default function Works(works) {
         <div className={styles.works}>
             <div className={styles.work_details_closer} style={work_details} onClick={() => viewProject(-1)}>
             </div>
-            <Work_Details works={works.themeColor} work_details={work_details} links={links}/>
+            <Work_Details works={works.themeColor} work_details={work_details} links1={links.codeLink} links2={links.projectLink}/>
             {showProjects(works, viewProject)}
         </div>
     )
