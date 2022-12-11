@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import styles from '../../styles/Home.module.css'
 import Image from 'next/dist/client/image'
 import coding from '../../images/coding.png'
+import react from '../../images/react.png'
+import native from '../../images/native.png'
 
 export default function Services(services) {
 
@@ -10,17 +12,17 @@ export default function Services(services) {
             <div className={"services_service"}>
                 <div className={"services_service_image"}><Image className={"services_service_image_img"} src={coding} /></div>
                 <div className={styles.services_service_title}>Web Developer</div>
-                <div className={styles.services_service_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque totam enim ipsam et .</div>
+                <div className={styles.services_service_desc}>Complex Websites or WebApps without any framework.</div>
             </div>
             <div className={"services_service"}>
-                <div className={"services_service_image"}><Image className={"services_service_image_img"} src={coding} /></div>
-                <div className={styles.services_service_title}>Web Developer</div>
-                <div className={styles.services_service_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque totam enim ipsam et .</div>
+                <div className={"services_service_image"}><Image className={"services_service_image_img"} src={react} /></div>
+                <div className={styles.services_service_title}>React.js Developer</div>
+                <div className={styles.services_service_desc}>Single Page Website or Web Apps using React js</div>
             </div>
             <div className={"services_service"}>
-                <div className={"services_service_image"}><Image className={"services_service_image_img"} src={coding} /></div>
-                <div className={styles.services_service_title}>Web Developer</div>
-                <div className={styles.services_service_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque totam enim ipsam et .</div>
+                <div className={"services_service_image"}><Image className={"services_service_image_img"} src={native} /></div>
+                <div className={styles.services_service_title}>React Native </div>
+                <div className={styles.services_service_desc}>Native android,ios,windows apps with React Native</div>
             </div>
             <style jsx>
                 {`

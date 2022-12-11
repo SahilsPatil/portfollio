@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
-import instagram from '../../images/instagram logo.png'
-import facebook from '../../images/facebook logo.png'
-import linkdin from '../../images/linkedin logo.png'
-import twitter from '../../images/twitter logo.png'
+import instagram from '../../images/instagramlogo.png'
+import facebook from '../../images/facebooklogo.png'
+import linkdin from '../../images/linkedinlogo.png'
+import twitter from '../../images/twitterlogo.png'
 import mail from '../../images/mail.png'
 import call from '../../images/call.png'
 import Typewriter from 'typewriter-effect'
@@ -27,7 +27,7 @@ export default function Main(main) {
             </div>
             <div className={styles.main_main}>
                 <div className={styles.main_main_title}><span style={{ color: main.color }}>Sahil</span> Patil</div>
-                <div className={styles.main_main_desc}>Im a <span style={{ color: main.color }}> <Typewriter
+                <div className={styles.main_main_desc}>I&apos;m a <span style={{ color: main.color }}> <Typewriter
                     onInit={(typewriter) => {
 
                         // setInterval(() => {
@@ -37,14 +37,13 @@ export default function Main(main) {
                     options={{
                         autoStart: true,
                         loop: true,
-                        delay: 500,
                         cursorClassName: styles.main_cursor,
                     }}
                 /></span></div>
             </div>
             <div className={styles.main_contact}>
                 <div><Image className={styles.main_contact_img} src={mail} width={30} height={30} /></div>
-                <div><Image className={styles.main_contact_img} src={call} width={30} height={30} /></div>
+                <a href="tel:9175184390"><Image className={styles.main_contact_img} src={call} width={30} height={30} /></a>
             </div>
         </div>
     )

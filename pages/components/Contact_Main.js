@@ -15,12 +15,13 @@ export default function Contact_Main(contact) {
                 <div className={styles.contact_message_title}>
                     Message Me
                 </div>
-                <form className={styles.contact_message_form}>
-                        <input type={"text"} placeholder='Name'/>
-                        <input type={"email"} placeholder='Email'/>
-                        <input type={"text"} placeholder='Suject'/>
-                        <textarea placeholder='Message' rows={4}/>
-                        <input style={{background:contact.themeColor}} type="submit" value={"Submit"} />
+                <form className={styles.contact_message_form} name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <input name="name" type={"text"} placeholder='Name' />
+                    <input name="email" type={"email"} placeholder='Email' />
+                    <input name="subject" type={"text"} placeholder='Suject' />
+                    <textarea name="message" placeholder='Message' rows={4} />
+                    <input style={{ background: contact.themeColor }} name="submit" type="submit" value={"Submit"} />
                 </form>
             </div>
             <div className={styles.contact_info}>
