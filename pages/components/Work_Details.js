@@ -6,10 +6,10 @@ export default function Work_Details(works) {
     return (
             <div className={styles.work_details} style={works.work_details} >
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    <div className={"works_work_info_btn"} style={{ border: "1.5px solid " + works.works.themeColor }}><a target="_blank" href={works.links.codeLink}>View Code</a></div>
+                    <div className={"works_work_info_btn"} style={{ border: "1.5px solid " + works.works.themeColor }}><a rel="noreferrer" target="_blank" href={works.links.codeLink}>View Code</a></div>
                 </div>
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    <div className={"works_work_info_btn"} style={{ border: "1.5px solid " + works.works.themeColor }}><a target="_blank" href={works.links.projectLink}>View Project</a></div>
+                    <div className={"works_work_info_btn"} style={{ border: "1.5px solid " + works.works.themeColor }}><a rel="noreferrer" target="_blank" href={works.links.projectLink}>View Project</a></div>
                 </div>
                 <style jsx>
                     {`

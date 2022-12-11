@@ -162,7 +162,7 @@ const projects = [
         "projectLink": "https://instagram.com"
     },
     {
-        "id": 1,
+        "id": 17,
         "img_name": image14,
         "name": "Website",
         "Desc": "$ 400.00",
@@ -170,7 +170,7 @@ const projects = [
         "projectLink": "https://instagram.com"
     },
     {
-        "id": 1,
+        "id": 18,
         "img_name": image15,
         "name": "Website",
         "Desc": "$ 400.00",
@@ -178,7 +178,7 @@ const projects = [
         "projectLink": "https://instagram.com"
     },
     {
-        "id": 1,
+        "id": 19,
         "img_name": image17,
         "name": "Website",
         "Desc": "$ 400.00",
@@ -186,7 +186,7 @@ const projects = [
         "projectLink": "https://instagram.com"
     },
     {
-        "id": 1,
+        "id": 20,
         "img_name": image16,
         "name": "Website",
         "Desc": "$ 400.00",
@@ -194,7 +194,7 @@ const projects = [
         "projectLink": "https://instagram.com"
     },
     {
-        "id": 1,
+        "id": 21,
         "img_name": image18,
         "name": "Website",
         "Desc": "$ 400.00",
@@ -202,7 +202,7 @@ const projects = [
         "projectLink": "https://instagram.com"
     },
     {
-        "id": 1,
+        "id": 22,
         "img_name": image19,
         "name": "Website",
         "Desc": "$ 400.00",
@@ -210,7 +210,7 @@ const projects = [
         "projectLink": "https://instagram.com"
     },
     {
-        "id": 1,
+        "id": 23,
         "img_name": image20,
         "name": "Website",
         "Desc": "$ 400.00",
@@ -250,7 +250,7 @@ function showProjects(works, viewProject) {
     return (
         projects.map((e) => {
             return (
-                <div className={styles.works_work}>
+                <div className={styles.works_work} key={e.id}>
                     <div className={styles.works_work_image} style={{ maxHeight: "500px", overflowY: 'hidden' }}>
                         <Image className={styles.works_work_img} src={e.img_name} />
                     </div>
