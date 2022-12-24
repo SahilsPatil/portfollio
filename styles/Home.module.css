@@ -1044,6 +1044,10 @@
     backdrop-filter: blur(5px);
     transition: 0.2s;
   }
+  .work_details{
+    
+    width: 60%;
+  }
 }
 @media (max-width: 806px) {
   /* .works_work_image:hover~.works_work_info {
@@ -1070,6 +1074,7 @@
     backdrop-filter: blur(5px);
     transition: 0.2s;
   }
+  
 }
 @media (max-width: 704px) {
 
@@ -1127,6 +1132,10 @@
   .works_work_info_desc {
     display: block;
     text-align: center;
+  }
+  .work_details{
+    height: 100px;
+    width: 80%;
   }
 }
 
@@ -1227,6 +1236,11 @@
   }
   .works_work_info{
     /* top: -65px; */
+  }
+  .work_details{
+    flex-direction: column;
+    width: 60%;
+    height: 150px;
   }
 
 }

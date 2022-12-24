@@ -53,7 +53,7 @@ export default function Contact_Main(contact) {
                         </div>
                         <div className={styles.contact_info_details_detail_info}>
                             <div className={styles.contact_info_details_detail_info_name}>Call</div>
-                            <div className={styles.contact_info_details_detail_info_desc}>+911234554</div>
+                            <div className={styles.contact_info_details_detail_info_desc}>+919175184390</div>
                         </div>
                     </div>
                     <div className={styles.contact_info_details_detail}>
@@ -62,7 +62,7 @@ export default function Contact_Main(contact) {
                         </div>
                         <div className={styles.contact_info_details_detail_info}>
                             <div className={styles.contact_info_details_detail_info_name}>Email</div>
-                            <div className={styles.contact_info_details_detail_info_desc}>sahil@gmail.com</div>
+                            <div className={styles.contact_info_details_detail_info_desc}>sahilspatil6@gmail.com</div>
                         </div>
                     </div>
                 </div>

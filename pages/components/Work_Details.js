@@ -34,6 +34,27 @@ export default function Work_Details(works) {
                     background:${works.works};
                     color: whitesmoke;
                   }
+                  @media (max-width: 497px) {
+                    .works_work_info_btn{
+                        margin: auto;
+                        font-size: 16px;
+                        opacity: .8;
+                        font-family: poppins;
+                        font-weight: 200;
+                        padding: 10px 20px;
+                        background: transparent;
+                        transition: all .4s ease;
+                        outline: none;
+                        margin: 0px;
+                        cursor: pointer;
+                        overflow: hidden;
+                        position: relative;
+                        transition: all .4s ease;
+                        text-align: center;
+                        color: ${works.works};
+                        width:100%;
+                      }
+                  }
                 `}
                 </style>
             </div>
