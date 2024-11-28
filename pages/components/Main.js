@@ -65,7 +65,7 @@ export default function Main(main) {
       </div>
       <div className={styles.main_main}>
         <div className={styles.main_main_title}>
-          <span style={{ color: main.color }}>Sahil</span> Patill
+          <span style={{ color: main.color }}>Sahil</span> Patil
         </div>
         <div className={styles.main_main_desc}>
           I&apos;m a{" "}
